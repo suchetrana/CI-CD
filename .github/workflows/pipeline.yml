@@ -9,3 +9,9 @@ jobs:
       
       - name: Print bye
         run: echo "Bye, GitHub Actions!"
+      
+  say-2nd-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print 2nd Message
+        run: echo "This is the second message!"
