@@ -11,7 +11,7 @@ jobs:
         run: echo "Bye, GitHub Actions!"
       
   say-2nd-message:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
       - name: Print 2nd Message
         run: echo "This is the second message!"
