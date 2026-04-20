@@ -11,6 +11,7 @@ jobs:
         run: echo "Bye, GitHub Actions!"
       
   say-2nd-message:
+    needs: say-hello
     runs-on: ubuntu-latest
     steps:
       - name: Print 2nd Message
