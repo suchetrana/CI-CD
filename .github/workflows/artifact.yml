@@ -1,4 +1,4 @@
-name: artifacts
+name: artifacts workflow
 on: push
 
 jobs:
@@ -9,7 +9,7 @@ jobs:
       - name: create a file
         run: echo "Hello world" > file.txt
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: my-artifact
           path: file.txt
@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: my-artifact
           # add step to read file.txt
