@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-
+let x=10;
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
